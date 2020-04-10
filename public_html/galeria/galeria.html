@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de fotos</title>
+    <link rel="stylesheet" href="estiloGaleria.css">
 </head>
 <body>
     <h1>Minhas fotos</h1>
-    <img src="imagens/foto1.jpg" alt="">
+    
+    <!--A grade: quato colunas-->
+    <div class="row">
+        <div class="column">
+            <img src="imagens/foto1.jpg" alt="Foto 1" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+            <img src="imagens/foto2.jpg" alt="Foto 2" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+            <img src="imagens/foto3.jpg" alt="Foto 3" onclick="myFunction(this);"> 
+        </div>
+
+        <div class="column">
+            <img src="imagens/foto4.jpg" alt="Foto 4" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <!--O cantainer de imagem em expansão-->
+    <div class="container">
+        <!-- Fechar a imagem -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <!-- Imagem expandida-->
+        <img id="expandedImg" style="width: 100%;">
+        <!--Texto expandida-->
+        <div id="imgtext"></div>
+    </div>
+
+    <script src="script_galeria/galeriaScript.js"></script>
 </body>
 </html>

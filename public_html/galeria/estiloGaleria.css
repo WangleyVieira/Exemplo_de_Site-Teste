@@ -1,0 +1,45 @@
+/* A grade: quatro colunas iguais que flutuam próximas umas das outras*/
+.column{
+    float: left;
+    width: 22%;
+    padding: 10px;
+}
+img{
+    width: 100%;
+}
+/* Estilo das imagens dentro da grade*/
+.column img{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.column img:hover{
+    opacity: 1;
+}
+/* Limpar flutuação depois das colunas*/
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* O cantainer de imagem em expansão (é necessário posicionamento para posicionar o botão fechar e o texto*/
+.container{
+    position: relative;
+    display: none;
+}
+/* Expandindo o texto da imagem*/ 
+#imgtext{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+/* Botão que pode ser fechado dentro da imagem*/
+.closebtn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
