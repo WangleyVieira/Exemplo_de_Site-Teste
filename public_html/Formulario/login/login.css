@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+/* Adicionando padding ao container*/
+.container{
+    padding: 16px;
+}
+/* *Campos de entrada com largura total*/
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 15px;
+    
+}
